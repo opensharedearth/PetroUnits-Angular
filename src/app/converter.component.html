@@ -10,14 +10,14 @@
     <span *ngIf="!num1 && !unit1">
       {{ exp1 }}
     </span>
-    {{ num1 }} {{ unit1 }}
+    {{ expression?.inputValue }} {{ expression?.selectedInput }}
   </div>
   <div class="col-xs-2"> = </div>
   <div class="col-xs-5">
     <span *ngIf="calcResult?.isValid">
       {{ calcResult.value | number }} 
     </span>
-    {{ exp2 }}
+    {{ expression?.selectedOutput }}
   </div>
 </div>
 <div class="row" *ngIf="calcResult?.error">
@@ -36,7 +36,7 @@
       <h4><small>As input, are you looking for?...</small></h4>
       <div class="well" id="input-defs" >
         <div class="list-group">
-          <a (click)="updateQueryParams('inputUnitSelect', def.name)" 
+          <a (click)="updateQParam('inputUnitSelect', def.name)" 
             *ngFor="let def of filteredInputDefinitions" 
             class="list-group-item"
             [class.active]="isUnitSelected(def.name, 'inputUnit')">
@@ -51,7 +51,7 @@
       <h4><small>As output, are you looking for?...</small></h4>
       <div class="well" id="output-defs">
         <div class="list-group">
-          <a (click)="updateQueryParams('outputUnitSelect', def.name)"
+          <a (click)="updateQParam('outputUnitSelect', def.name)"
             *ngFor="let def of filteredOutputDefinitions" 
             class="list-group-item"
             [class.active]="isUnitSelected(def.name, 'outputUnit')">

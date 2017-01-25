@@ -49,6 +49,7 @@ export class ConverterComponent implements OnInit {
   num1: number;
   unit1: string;
 
+  expression: ConversionExpression;
   calcResult: CalculationResult;
 
   filteredInputDefinitions: UnitDefinition[];
@@ -79,6 +80,11 @@ export class ConverterComponent implements OnInit {
           this.conversionService.filterOutputDefinitions(exp.outputUnit);
       }
       
+      // update stored expression on component
+      this.expression = exp;
+
+      // if expression has all required props, calculate
+      //   else CalculationResult.isValid = false
       this.calcResult = this.conversionService.calculateExpression(exp);
     });
   }
@@ -111,7 +117,22 @@ export class ConverterComponent implements OnInit {
     // apply updated q-params to router
     this.router.navigate(['convert'], navExtras);
   }
-
+  
+  // Click handler for Definition lists in view
+  updateQParam(p_name, new_value) {
+    console.log('Clicked another unit');
+    // all q-params apply to conversion calc
+    //  therefore, any change should clear previous calc
+    //  in case new calc is not possible bc of incomplete input
+    this.calcResult = null;
+    // update local copy of q-params
+    this.queryParams[p_name] = new_value;
+    let navExtras: NavigationExtras = {
+      queryParams: this.queryParams
+    };
+    // apply updated q-params to router
+    this.router.navigate(['convert'], navExtras);
+  }
   updateUnits(key: string) {
     let q = this.queryParams;
     if (key === 'inputUnitSelect') {
