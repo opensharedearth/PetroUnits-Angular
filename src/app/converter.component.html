@@ -1,0 +1,67 @@
+<div class="form-group">
+  <input #convert type="text"
+        (keyup)="parseExpression(convert.value)"
+        id="inputValue"
+        class="form-control input-lg"
+        placeholder="Start typing...">
+</div>
+<div class="row results">
+  <div class="col-xs-5">
+    <span *ngIf="!num1 && !unit1">
+      {{ exp1 }}
+    </span>
+    {{ num1 }} {{ unit1 }}
+  </div>
+  <div class="col-xs-2"> = </div>
+  <div class="col-xs-5">
+    <span *ngIf="calcResult?.isValid">
+      {{ calcResult.value | number }} 
+    </span>
+    {{ exp2 }}
+  </div>
+</div>
+<div class="row" *ngIf="calcResult?.error">
+  <div class="col-xs-12 status">
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <div class="panel-title">{{ calcResult.error.name }}</div>
+      </div>
+      <div class="panel-body">{{ calcResult.error.message }}</div>
+    </div>
+  </div>
+</div>
+<div class="row definitions">
+  <div class="col-xs-5">
+    <div *ngIf="filteredInputDefinitions">
+      <h4><small>As input, are you looking for?...</small></h4>
+      <div class="well" id="input-defs" >
+        <div class="list-group">
+          <a (click)="updateQueryParams('inputUnitSelect', def.name)" 
+            *ngFor="let def of filteredInputDefinitions" 
+            class="list-group-item"
+            [class.active]="isUnitSelected(def.name, 'inputUnit')">
+            {{ def.name }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-5 col-xs-offset-2">
+    <div *ngIf="filteredOutputDefinitions">
+      <h4><small>As output, are you looking for?...</small></h4>
+      <div class="well" id="output-defs">
+        <div class="list-group">
+          <a (click)="updateQueryParams('outputUnitSelect', def.name)"
+            *ngFor="let def of filteredOutputDefinitions" 
+            class="list-group-item"
+            [class.active]="isUnitSelected(def.name, 'outputUnit')">
+            {{ def.name }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<p>Segment 1: {{ exp1 }}</p>
+<p>Segment 2: {{ exp2 }}</p>
+<p>Segment 1 value: {{ num1 }}</p>-->

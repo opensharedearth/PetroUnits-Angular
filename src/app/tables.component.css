@@ -1,0 +1,62 @@
+.category-select {
+  border-right: 1px solid black;
+}
+.selected, .selected:hover {
+    border: 2px solid blue;
+}
+tr.output {
+  border: 2px solid red;
+}
+table.table {
+  margin-top: 20px;
+}
+.table th:first-child {
+  width: 10%;
+}
+.table th:nth-child(2) {
+  width: 30%;
+}
+.table th:nth-child(3) {
+  width: 60%;
+}
+.table td:nth-child(3) {
+  text-align: right;
+}
+.results-panel {
+  height: 100px;
+}
+.results-display {
+  margin-top: 18px;
+  font-size: 24px;
+  text-align: center;
+}
+.blue, .red {
+  min-height: 36px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.blue {
+  background-color: rgba(0,0,255, 0.2);
+  border-left: 2px solid blue;
+}
+.red {
+  background-color: rgba(255,0,0, 0.2);
+  border-right: 2px solid red;
+}
+a {
+  cursor: pointer;
+}
+td > a {
+  display: none;
+  font-size: 12px;
+}
+tr:hover td > a {
+  display: inline;
+}
+tr.selected td > a {
+  display: inline;
+}
+.tip {
+  position: absolute;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

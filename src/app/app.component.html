@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <hr/>
+      <ul class="nav nav-pills">
+        <li routerLinkActive="active"><a routerLink="convert">Units Converter</a></li>
+        <li routerLinkActive="active"><a routerLink="tables">Reference Tables</a></li>
+        <li routerLinkActive="active" *ngIf="debug"><a routerLink="tests">Tests</a></li>
+      </ul>
+      <hr/>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

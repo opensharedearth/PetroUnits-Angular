@@ -1,0 +1,1903 @@
+{
+	"Quantities": [{
+		"BaseUnit": "m\/km",
+		"Name": "Length\/length",
+		"Units": [{
+			"Factor": 0.1893939,
+			"Name": "ft\/mi"
+		}, {
+			"Factor": 1,
+			"Name": "m\/km"
+		}]
+	}, {
+		"BaseUnit": "m\/m³",
+		"Name": "Length\/volume",
+		"Units": [{
+			"Factor": 80.51964,
+			"Name": "ft\/U.S. gal"
+		}, {
+			"Factor": 10.76391,
+			"Name": "ft\/ft³"
+		}, {
+			"Factor": 1.917134,
+			"Name": "ft\/bbl"
+		}, {
+			"Factor": 1,
+			"Name": "m\/m³"
+		}]
+	}, {
+		"BaseUnit": "m²\/cm³",
+		"Name": "Area\/volume",
+		"Units": [{
+			"Factor": 0.005699291,
+			"Name": "ft²"
+		}, {
+			"Factor": 1,
+			"Name": "m²\/cm³"
+		}]
+	}, {
+		"BaseUnit": "m²\/kg",
+		"Name": "Area\/mass",
+		"Units": [{
+			"Factor": 0.1,
+			"Name": "cm"
+		}, {
+			"Factor": 1,
+			"Name": "m²\/kg"
+		}]
+	}, {
+		"BaseUnit": "m³\/m",
+		"Name": "Volume\/length (linear displacement)",
+		"Units": [{
+			"Factor": 6.259342,
+			"Name": "bbl\/in."
+		}, {
+			"Factor": 0.5216119,
+			"Name": "bbl\/ft"
+		}, {
+			"Factor": 0.09290304,
+			"Name": "ft³\/ft"
+		}, {
+			"Factor": 0.01241933,
+			"Name": "U.S. gal\/ft"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/m"
+		}]
+	}, {
+		"BaseUnit": "rad",
+		"Name": "Plane angle",
+		"Units": [{
+			"Factor": 1,
+			"Name": "rad"
+		}, {
+			"Factor": 0.01745329,
+			"Name": "deg (°)"
+		}, {
+			"Factor": 0.0002908882,
+			"Name": "min (’)"
+		}, {
+			"Factor": 4.848137E-06,
+			"Name": "sec (’’)"
+		}]
+	}, {
+		"BaseUnit": "sr",
+		"Name": "Solid angle",
+		"Units": [{
+			"Factor": 1,
+			"Name": "sr"
+		}]
+	}, {
+		"BaseUnit": "kmol",
+		"Name": "Amount of substance",
+		"Units": [{
+			"Factor": 0.4535924,
+			"Name": "lbm mol"
+		}, {
+			"Factor": 0.001,
+			"Name": "g mol"
+		}, {
+			"Factor": 0.0446158,
+			"Name": "std m3 (0°C, 1 atm)"
+		}, {
+			"Factor": 0.0422932,
+			"Name": "std m3(15°C, 1 atm)"
+		}, {
+			"Factor": 0.0011953,
+			"Name": "std ft3 (60°F, 1 atm)"
+		}, {
+			"Factor": 1,
+			"Name": "kmol"
+		}]
+	}, {
+		"BaseUnit": "kJ\/m³",
+		"Name": "Calorific value (volume basis–gases)",
+		"Units": [{
+			"Factor": 4184,
+			"Name": "cal\/mL"
+		}, {
+			"Factor": 4.184,
+			"Name": "kcal\/m³"
+		}, {
+			"Factor": 37.25895,
+			"Name": "Btu\/ft³"
+		}, {
+			"Factor": 1,
+			"Name": "kJ\/m³"
+		}]
+	}, {
+		"BaseUnit": "kJ(kg•K)",
+		"Name": "Specific entropy",
+		"Units": [{
+			"Factor": 4.1868,
+			"Name": "Btu\/(lbm-°R)"
+		}, {
+			"Factor": 4.184,
+			"Name": "cal\/(g-°K)"
+		}, {
+			"Factor": 4.184,
+			"Name": "kcal\/(kg-°C)"
+		}, {
+			"Factor": 1,
+			"Name": "kJ(kg•K)"
+		}]
+	}, {
+		"BaseUnit": "kJ(kg•K)",
+		"Name": "Specific heat",
+		"Units": [{
+			"Factor": 3600,
+			"Name": "kW-hr\/(kg-°C)"
+		}, {
+			"Factor": 1,
+			"Name": "kJ(kg•K)"
+		}]
+	}, {
+		"BaseUnit": "kJ(kg•K)",
+		"Name": "capacity (mass basis)",
+		"Units": [{
+			"Factor": 4.1868,
+			"Name": "Btu\/(lbm-°F)"
+		}, {
+			"Factor": 4.184,
+			"Name": "kcal(kg-°C)"
+		}, {
+			"Factor": 1,
+			"Name": "kJ(kg•K)"
+		}]
+	}, {
+		"BaseUnit": "kJ(kmol•K)",
+		"Name": "Molar heat",
+		"Units": [{
+			"Factor": 4.1868,
+			"Name": "Btu\/(lbm mol-°F)"
+		}, {
+			"Factor": 1,
+			"Name": "kJ(kmol•K)"
+		}]
+	}, {
+		"BaseUnit": "kJ(kmol•K)",
+		"Name": "capacity",
+		"Units": [{
+			"Factor": 4.184,
+			"Name": "cal\/(g mol-°C)"
+		}, {
+			"Factor": 1,
+			"Name": "kJ(kmol•K)"
+		}]
+	}, {
+		"BaseUnit": "K",
+		"Name": "Temperature (absolute)",
+		"Units": [{
+			"Equation": "5\/9\/2016",
+			"Name": "°R"
+		}, {
+			"Factor": 1,
+			"Name": "°K"
+		}, {
+			"Factor": 1,
+			"Name": "K"
+		}]
+	}, {
+		"BaseUnit": "°C",
+		"Name": "Temperature (traditional)",
+		"Units": [{
+			"Equation": "(F-32)\/1.8",
+			"Name": "°F"
+		}, {
+			"Factor": 1,
+			"Name": "°C"
+		}]
+	}, {
+		"BaseUnit": "K",
+		"Name": "Temperature (difference)",
+		"Units": [{
+			"Equation": "5\/9E+00",
+			"Name": "°F"
+		}, {
+			"Factor": 1,
+			"Name": "°C"
+		}, {
+			"Factor": 1,
+			"Name": "K"
+		}]
+	}, {
+		"BaseUnit": "mK\/m",
+		"Name": "Temperature\/length (geothermal gradient)",
+		"Units": [{
+			"Factor": 18.22689,
+			"Name": "°F\/100 ft"
+		}, {
+			"Factor": 1,
+			"Name": "mK\/m"
+		}]
+	}, {
+		"BaseUnit": "m\/K",
+		"Name": "Length\/temperature (geothermal step)",
+		"Units": [{
+			"Factor": 0.54864,
+			"Name": "ft°F"
+		}, {
+			"Factor": 1,
+			"Name": "m\/K"
+		}]
+	}, {
+		"BaseUnit": "kPa",
+		"Name": "Vacuum, draft",
+		"Units": [{
+			"Factor": 3.37685,
+			"Name": "in. Hg (60°F)"
+		}, {
+			"Factor": 0.249082,
+			"Name": "in. H2O (39.2°F)"
+		}, {
+			"Factor": 0.1333224,
+			"Name": "Mm Hg (0°C)=torr"
+		}, {
+			"Factor": 0.0980638,
+			"Name": "Cm H2O (4°C)"
+		}, {
+			"Factor": 1,
+			"Name": "kPa"
+		}]
+	}, {
+		"BaseUnit": "kPa\/m",
+		"Name": "Pressure drop\/length",
+		"Units": [{
+			"Factor": 22.62059,
+			"Name": "psi\/ft"
+		}, {
+			"Factor": 0.2262059,
+			"Name": "psi\/100 ft"
+		}, {
+			"Factor": 1,
+			"Name": "kPa\/m"
+		}]
+	}, {
+		"BaseUnit": "kg\/m³",
+		"Name": "Density (gases)",
+		"Units": [{
+			"Factor": 16.01846,
+			"Name": "lbm\/ft³"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/m³"
+		}]
+	}, {
+		"BaseUnit": "kg\/m³",
+		"Name": "Density (solids)",
+		"Units": [{
+			"Factor": 16.01846,
+			"Name": "lbm\/ft³"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/m³"
+		}]
+	}, {
+		"BaseUnit": "m³\/kg",
+		"Name": "Specific volume(gases)",
+		"Units": [{
+			"Factor": 0.06242796,
+			"Name": "ft³\/lbm"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/kg"
+		}]
+	}, {
+		"BaseUnit": "dm³\/kg",
+		"Name": "Specific volume (liquids)",
+		"Units": [{
+			"Factor": 62.42796,
+			"Name": "ft³\/lbm"
+		}, {
+			"Factor": 10.02242,
+			"Name": "U.K. gal\/lbm"
+		}, {
+			"Factor": 8.345404,
+			"Name": "U.S. gal\/lbm"
+		}, {
+			"Factor": 1,
+			"Name": "dm³\/kg"
+		}]
+	}, {
+		"BaseUnit": "m³\/kmol",
+		"Name": "Specific volume (mole basis)",
+		"Units": [{
+			"Factor": 1,
+			"Name": "L\/g mol"
+		}, {
+			"Factor": 0.06242796,
+			"Name": "ft3\/lbm mol"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/kmol"
+		}]
+	}, {
+		"BaseUnit": "m³\/t",
+		"Name": "Specific volume (clay yield)",
+		"Units": [{
+			"Factor": 0.1752535,
+			"Name": "bbl\/U.S. ton"
+		}, {
+			"Factor": 0.1564763,
+			"Name": "bbl\/U.K. ton"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/t"
+		}]
+	}, {
+		"BaseUnit": "dm³\/t",
+		"Name": "Yield (shale distillation)",
+		"Units": [{
+			"Factor": 175.2535,
+			"Name": "bbl\/U.S. ton"
+		}, {
+			"Factor": 156.4763,
+			"Name": "bbl\/U.K. ton"
+		}, {
+			"Factor": 4.172702,
+			"Name": "U.S. gal\/U.S. ton"
+		}, {
+			"Factor": 3.725627,
+			"Name": "U.S. gal\/U.K. ton"
+		}, {
+			"Factor": 1,
+			"Name": "dm³\/t"
+		}]
+	}, {
+		"BaseUnit": "kg\/m³",
+		"Name": "Concentration(mass\/volume)",
+		"Units": [{
+			"Factor": 2.85301,
+			"Name": "lbm\/bbl"
+		}, {
+			"Factor": 0.264172,
+			"Name": "g\/U.S. gal"
+		}, {
+			"Factor": 0.2199692,
+			"Name": "g\/U.K. gal"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/m³"
+		}]
+	}, {
+		"BaseUnit": "kmol\/m³",
+		"Name": "Concentration(mole\/volume)",
+		"Units": [{
+			"Factor": 119.8264,
+			"Name": "lbm mol\/U.S. gal"
+		}, {
+			"Factor": 99.77633,
+			"Name": "lbm mol\/U.K. gal"
+		}, {
+			"Factor": 16.01846,
+			"Name": "lbm mol\/ft3"
+		}, {
+			"Factor": 0.00751818,
+			"Name": "std ft3 (60°F,1 atm)\/bbl"
+		}, {
+			"Factor": 1,
+			"Name": "kmol\/m³"
+		}]
+	}, {
+		"BaseUnit": "dm³\/kmol",
+		"Name": "Concentration(volume\/mole)",
+		"Units": [{
+			"Factor": 3.16693,
+			"Name": "U.S. gal\/1,000 std ft3 (60°F\/60°F)"
+		}, {
+			"Factor": 0.133011,
+			"Name": "bbl\/million std ft3 (60°F\/60°F)"
+		}, {
+			"Factor": 1,
+			"Name": "dm³\/kmol"
+		}]
+	}, {
+		"BaseUnit": "kmol\/h",
+		"Name": "Throughput (mole basis)",
+		"Units": [{
+			"Factor": 0.4535924,
+			"Name": "lbm mol\/hr"
+		}, {
+			"Factor": 1,
+			"Name": "kmol\/h"
+		}]
+	}, {
+		"BaseUnit": "m³\/km",
+		"Name": "Pipeline capacity",
+		"Units": [{
+			"Factor": 0.09879013,
+			"Name": "bbl\/mile"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/km"
+		}]
+	}, {
+		"BaseUnit": "kg\/s",
+		"Name": "Flow rate (mass basis)",
+		"Units": [{
+			"Factor": 16.93412,
+			"Name": "U.K. ton\/min"
+		}, {
+			"Factor": 15.11974,
+			"Name": "U.S. ton\/min"
+		}, {
+			"Factor": 0.2822353,
+			"Name": "U.K. ton\/hr"
+		}, {
+			"Factor": 0.2519958,
+			"Name": "U.S. ton\/hr"
+		}, {
+			"Factor": 0.0117598,
+			"Name": "U.K. ton\/D"
+		}, {
+			"Factor": 0.01049982,
+			"Name": "U.S. ton\/D"
+		}, {
+			"Factor": 524.9912,
+			"Name": "million lbm\/yr"
+		}, {
+			"Factor": 3.221864E-05,
+			"Name": "U.K. ton\/yr"
+		}, {
+			"Factor": 2.876664E-05,
+			"Name": "U.S. ton\/yr"
+		}, {
+			"Factor": 0.4535924,
+			"Name": "lbm\/s"
+		}, {
+			"Factor": 0.007559873,
+			"Name": "lbm\/min"
+		}, {
+			"Factor": 0.0001259979,
+			"Name": "lbm\/hr"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/s"
+		}]
+	}, {
+		"BaseUnit": "kmol\/s",
+		"Name": "Flow rate (mole basis)",
+		"Units": [{
+			"Factor": 4.535924E-113,
+			"Name": "lbm mol\/s"
+		}, {
+			"Name": "lbm mol\/hr"
+		}, {
+			"Factor": 1.383449E-213,
+			"Name": "million scf\/D"
+		}, {
+			"Factor": 1,
+			"Name": "kmol\/s"
+		}]
+	}, {
+		"BaseUnit": "kg\/(s•m)",
+		"Name": "Flow rate\/length (mass basis)",
+		"Units": [{
+			"Factor": 1.488164,
+			"Name": "lbm\/(s-ft)"
+		}, {
+			"Factor": 0.0004133789,
+			"Name": "lbm\/(hr-ft)"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/(s•m)"
+		}]
+	}, {
+		"BaseUnit": "m²\/s",
+		"Name": "Flow rate\/length",
+		"Units": [{
+			"Factor": 0.0002485833,
+			"Name": "U.K. gal\/(min-ft)"
+		}, {
+			"Factor": 0.0002069888,
+			"Name": "U.S. gal\/(min-ft)"
+		}, {
+			"Factor": 4.971667E-05,
+			"Name": "U.K. gal\/(hr-in.)"
+		}, {
+			"Factor": 4.139776E-05,
+			"Name": "U.S. gal\/(hr-in.)"
+		}, {
+			"Factor": 4.143055E-06,
+			"Name": "U.K. gal\/(hr-ft)"
+		}, {
+			"Factor": 3.449814E-06,
+			"Name": "U.S. gal\/(hr-ft)"
+		}, {
+			"Factor": 1,
+			"Name": "m²\/s"
+		}]
+	}, {
+		"BaseUnit": "kg\/s•m²",
+		"Name": "Flow rate\/area (mass basis)",
+		"Units": [{
+			"Factor": 4.882428,
+			"Name": "lbm\/(s-ft²)"
+		}, {
+			"Factor": 0.00135623,
+			"Name": "lbm\/(hr-ft²)"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/s•m²"
+		}]
+	}, {
+		"BaseUnit": "m\/s",
+		"Name": "Flow rate\/area",
+		"Units": [{
+			"Factor": 0.3048,
+			"Name": "ft³\/(s-ft²)"
+		}, {
+			"Factor": 0.00508,
+			"Name": "ft³\/(min-ft²)"
+		}, {
+			"Factor": 0.001957349,
+			"Name": "U.K. gal\/(hr-in.2)"
+		}, {
+			"Factor": 0.001629833,
+			"Name": "U.S. gal\/(hr-in.2)"
+		}, {
+			"Factor": 0.0008155621,
+			"Name": "U.K. gal\/(min-ft2)"
+		}, {
+			"Factor": 0.0006790972,
+			"Name": "U.S. gal\/(min-ft2)"
+		}, {
+			"Factor": 1.35927E-05,
+			"Name": "U.K. gal\/(hr-ft2)"
+		}, {
+			"Factor": 1.131829E-05,
+			"Name": "U.S. gal\/(hr-ft2)"
+		}, {
+			"Factor": 1,
+			"Name": "m\/s"
+		}]
+	}, {
+		"BaseUnit": "m³\/(d•kPa)",
+		"Name": "Flow rate\/pressure drop (productivity index)",
+		"Units": [{
+			"Factor": 0.02305916,
+			"Name": "bbl\/(D-psi)"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/(d•kPa)"
+		}]
+	}, {
+		"BaseUnit": "J",
+		"Name": "Impact energy",
+		"Units": [{
+			"Factor": 9.80665,
+			"Name": "kgf•m"
+		}, {
+			"Factor": 1.355818,
+			"Name": "lbf-ft"
+		}, {
+			"Factor": 1,
+			"Name": "J"
+		}]
+	}, {
+		"BaseUnit": "MJ\/m",
+		"Name": "Work\/length",
+		"Units": [{
+			"Factor": 46.97322,
+			"Name": "U.S. tonf-mile\/ft"
+		}, {
+			"Factor": 1,
+			"Name": "MJ\/m"
+		}]
+	}, {
+		"BaseUnit": "mJ\/m²",
+		"Name": "Surface energy",
+		"Units": [{
+			"Factor": 1,
+			"Name": "erg\/cm²"
+		}, {
+			"Factor": 1,
+			"Name": "mJ\/m²"
+		}]
+	}, {
+		"BaseUnit": "J\/cm²",
+		"Name": "Specific impact",
+		"Units": [{
+			"Factor": 9.80665,
+			"Name": "kgf•m\/cm²"
+		}, {
+			"Factor": 0.2101522,
+			"Name": "lbf•ft\/in.²"
+		}, {
+			"Factor": 1,
+			"Name": "J\/cm²"
+		}]
+	}, {
+		"BaseUnit": "kW\/m²",
+		"Name": "Power\/area",
+		"Units": [{
+			"Factor": 11.35653,
+			"Name": "Btu\/s•ft²"
+		}, {
+			"Factor": 0.01162222,
+			"Name": "cal\/hr•cm²"
+		}, {
+			"Factor": 0.003154591,
+			"Name": "Btu\/hr•ft²"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/m²"
+		}]
+	}, {
+		"BaseUnit": "mW\/m²",
+		"Name": "Heat flow unit—hfu",
+		"Units": [{
+			"Factor": 41.84,
+			"Name": "µcal\/s•cm²"
+		}, {
+			"Factor": 1,
+			"Name": "mW\/m²"
+		}]
+	}, {
+		"BaseUnit": "kW\/m³",
+		"Name": "Heat release rate,",
+		"Units": [{
+			"Factor": 26.33414,
+			"Name": "hp\/ft³"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/m³"
+		}]
+	}, {
+		"BaseUnit": "kW\/m³",
+		"Name": "mixing power",
+		"Units": [{
+			"Factor": 1.162222,
+			"Name": "cal\/(hr•cm³)"
+		}, {
+			"Factor": 37.25895,
+			"Name": "Btu\/(s•ft³)"
+		}, {
+			"Factor": 0.01034971,
+			"Name": "Btu\/(hr•ft³)"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/m³"
+		}]
+	}, {
+		"BaseUnit": "µW\/m³",
+		"Name": "Heat generation unit—hgu (radioactive rocks)",
+		"Units": [{
+			"Factor": 4184000000000,
+			"Name": "cal\/(s•cm³)"
+		}, {
+			"Factor": 1,
+			"Name": "µW\/m³"
+		}]
+	}, {
+		"BaseUnit": "W\/kW",
+		"Name": "Cooling duty (machinery)",
+		"Units": [{
+			"Factor": 0.3930148,
+			"Name": "Btu\/(bhp-hr)"
+		}, {
+			"Factor": 1,
+			"Name": "W\/kW"
+		}]
+	}, {
+		"BaseUnit": "mg\/J",
+		"Name": "Specific fuel consumption (mass basis)",
+		"Units": [{
+			"Factor": 0.1689659,
+			"Name": "lbm\/(hp-hr)"
+		}, {
+			"Factor": 1,
+			"Name": "mg\/J"
+		}]
+	}, {
+		"BaseUnit": "dm³\/MJ",
+		"Name": "Specific fuel consumption (volume basis)",
+		"Units": [{
+			"Factor": 277.7778,
+			"Name": "m³\/(kW-hr)"
+		}, {
+			"Factor": 1.410089,
+			"Name": "U.S. gal\/(hp-hr)"
+		}, {
+			"Factor": 0.2116809,
+			"Name": "U.K. pt\/(hp-hr)"
+		}, {
+			"Factor": 1,
+			"Name": "dm³\/MJ"
+		}]
+	}, {
+		"BaseUnit": "km\/h",
+		"Name": "Velocity (linear),",
+		"Units": [{
+			"Factor": 1.852,
+			"Name": "knot"
+		}, {
+			"Factor": 1,
+			"Name": "km\/h"
+		}]
+	}, {
+		"BaseUnit": "rad\/s",
+		"Name": "Velocity (angular)",
+		"Units": [{
+			"Factor": 0.1047198,
+			"Name": "rev\/min"
+		}, {
+			"Factor": 6.283185,
+			"Name": "rev\/s"
+		}, {
+			"Factor": 0.0002908882,
+			"Name": "degree\/min"
+		}, {
+			"Factor": 1,
+			"Name": "rad\/s"
+		}]
+	}, {
+		"BaseUnit": "s\/m",
+		"Name": "Interval transit time",
+		"Units": [{
+			"Factor": 3.28084,
+			"Name": "s\/ft"
+		}, {
+			"Factor": 1,
+			"Name": "s\/m"
+		}]
+	}, {
+		"BaseUnit": "mm\/a",
+		"Name": "Corrosion rate",
+		"Units": [{
+			"Factor": 25.4,
+			"Name": "in.\/yr (ipy)"
+		}, {
+			"Factor": 0.0254,
+			"Name": "mil\/yr"
+		}, {
+			"Factor": 1,
+			"Name": "mm\/a"
+		}]
+	}, {
+		"BaseUnit": "rev\/s",
+		"Name": "Rotational frequency",
+		"Units": [{
+			"Factor": 1,
+			"Name": "rev\/s"
+		}, {
+			"Factor": 0.01666667,
+			"Name": "rev\/min"
+		}, {
+			"Factor": 0.01666667,
+			"Name": "rev\/min"
+		}]
+	}, {
+		"BaseUnit": "m\/s²",
+		"Name": "Acceleration (linear)",
+		"Units": [{
+			"Factor": 0.3048,
+			"Name": "ft\/s²"
+		}, {
+			"Factor": 0.01,
+			"Name": "gal(cm\/s²)"
+		}, {
+			"Factor": 1,
+			"Name": "m\/s²"
+		}]
+	}, {
+		"BaseUnit": "rad\/s²",
+		"Name": "Acceleration(rotational)",
+		"Units": [{
+			"Factor": 1,
+			"Name": "rad\/s²"
+		}, {
+			"Factor": 0.1047198,
+			"Name": "rpm\/s"
+		}]
+	}, {
+		"BaseUnit": "kg•m\/s",
+		"Name": "Momentum",
+		"Units": [{
+			"Factor": 0.138255,
+			"Name": "lbm•ft\/s"
+		}, {
+			"Factor": 1,
+			"Name": "kg•m\/s"
+		}]
+	}, {
+		"BaseUnit": "(N•m)\/m",
+		"Name": "Bending moment, length",
+		"Units": [{
+			"Factor": 53.37856,
+			"Name": "(lbf-ft)\/in."
+		}, {
+			"Factor": 9.80665,
+			"Name": "(kgf-m)\/m"
+		}, {
+			"Factor": 4.448222,
+			"Name": "(lbf-in.)\/in."
+		}, {
+			"Factor": 1,
+			"Name": "(N•m)\/m"
+		}]
+	}, {
+		"BaseUnit": "GPa",
+		"Name": "Elastic modul (Young’s, shear bulk)",
+		"Units": [{
+			"Factor": 6.894757E-06,
+			"Name": "lbf\/in.²"
+		}, {
+			"Factor": 1,
+			"Name": "GPa"
+		}]
+	}, {
+		"BaseUnit": "kg•m²",
+		"Name": "Moment of inertia",
+		"Units": [{
+			"Factor": 0.04214011,
+			"Name": "lbm-ft²"
+		}, {
+			"Factor": 1,
+			"Name": "kg•m²"
+		}]
+	}, {
+		"BaseUnit": "cm⁴",
+		"Name": "Moment of section",
+		"Units": [{
+			"Factor": 41.62314,
+			"Name": "in.⁴"
+		}, {
+			"Factor": 1,
+			"Name": "cm⁴"
+		}]
+	}, {
+		"BaseUnit": "cm³",
+		"Name": "Section modulus",
+		"Units": [{
+			"Factor": 16.38706,
+			"Name": "cu in."
+		}, {
+			"Factor": 16387.06,
+			"Name": "cu ft"
+		}, {
+			"Factor": 1,
+			"Name": "cm³"
+		}]
+	}, {
+		"BaseUnit": "Pa",
+		"Name": "Yield point, gel strength (drilling fluid)",
+		"Units": [{
+			"Factor": 0.4788026,
+			"Name": "lbf\/100 ft2"
+		}, {
+			"Factor": 1,
+			"Name": "Pa"
+		}]
+	}, {
+		"BaseUnit": "kg\/m",
+		"Name": "Mass\/length",
+		"Units": [{
+			"Factor": 1.488164,
+			"Name": "lbm\/ft"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/m"
+		}]
+	}, {
+		"BaseUnit": "Mg\/m²",
+		"Name": "Mass\/area",
+		"Units": [{
+			"Factor": 9.764855,
+			"Name": "U.S. ton\/ft2"
+		}, {
+			"Factor": 1,
+			"Name": "Mg\/m²"
+		}]
+	}, {
+		"BaseUnit": "kg\/m²",
+		"Name": "structural loading, bearing capacity (mass basis)",
+		"Units": [{
+			"Factor": 4.882428,
+			"Name": "lbm\/ft²"
+		}, {
+			"Factor": 1,
+			"Name": "kg\/m²"
+		}]
+	}, {
+		"BaseUnit": "mm\/(mm•K)",
+		"Name": "Coefficient of thermal expansion",
+		"Units": [{
+			"Factor": 0.5555556,
+			"Name": "in.\/(in.-°F)"
+		}, {
+			"Factor": 1,
+			"Name": "mm\/(mm•K)"
+		}]
+	}, {
+		"BaseUnit": "mm²\/s",
+		"Name": "Diffusivity",
+		"Units": [{
+			"Factor": 92903.04,
+			"Name": "ft²\/s"
+		}, {
+			"Factor": 100,
+			"Name": "cm²\/s"
+		}, {
+			"Factor": 25.8064,
+			"Name": "ft²\/hr"
+		}, {
+			"Factor": 1,
+			"Name": "mm²\/s"
+		}]
+	}, {
+		"BaseUnit": "(K•m²)kW",
+		"Name": "Thermal resistance",
+		"Units": [{
+			"Factor": 860.4208,
+			"Name": "(°C-m²•hr)\/kcal"
+		}, {
+			"Factor": 176.1102,
+			"Name": "(°F-ft²hr)\/Btu"
+		}, {
+			"Factor": 1,
+			"Name": "(K•m²)kW"
+		}]
+	}, {
+		"BaseUnit": "kW\/m²",
+		"Name": "Heat flux",
+		"Units": [{
+			"Factor": 0.003154591,
+			"Name": "Btu\/(hr-ft²)"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/m²"
+		}]
+	}, {
+		"BaseUnit": "W\/(m•K)",
+		"Name": "Thermal conductivity",
+		"Units": [{
+			"Factor": 418.4,
+			"Name": "(cal\/s-cm²-°C\/cm"
+		}, {
+			"Factor": 1.730735,
+			"Name": "Btu\/(hr-ft²-°F\/ft)"
+		}, {
+			"Factor": 1.162222,
+			"Name": "kcal\/(hr-m²-°C\/m)"
+		}, {
+			"Factor": 0.1442279,
+			"Name": "Btu\/(hr-ft2-°F\/in.)"
+		}, {
+			"Factor": 0.1162222,
+			"Name": "cal\/(hr-cm²-°C\/cm)"
+		}, {
+			"Factor": 1,
+			"Name": "W\/(m•K)"
+		}]
+	}, {
+		"BaseUnit": "kW\/(m²•K)",
+		"Name": "Heat transfer coefficient",
+		"Units": [{
+			"Factor": 41.84,
+			"Name": "cal\/(s-cm²-°C)"
+		}, {
+			"Factor": 20.44175,
+			"Name": "Btu\/(s-ft²-°F)"
+		}, {
+			"Factor": 0.01162222,
+			"Name": "cal\/(hr-cm²-°C)"
+		}, {
+			"Factor": 0.005678263,
+			"Name": "Btu\/(hr-ft²-°F)"
+		}, {
+			"Factor": 0.005678263,
+			"Name": "Btu\/(hr-ft²-°R)"
+		}, {
+			"Factor": 0.001162222,
+			"Name": "kcal\/(hr-m²-°C)"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/(m²•K)"
+		}]
+	}, {
+		"BaseUnit": "kW\/(m³•K)",
+		"Name": "Volumetric heat",
+		"Units": [{
+			"Factor": 67.06611,
+			"Name": "Btu\/(s-ft³-°F)"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/(m³•K)"
+		}]
+	}, {
+		"BaseUnit": "kW\/(m³•K)",
+		"Name": "transfer coefficient",
+		"Units": [{
+			"Factor": 0.01862947,
+			"Name": "Btu\/(hr-ft³-°F)"
+		}, {
+			"Factor": 1,
+			"Name": "kW\/(m³•K)"
+		}]
+	}, {
+		"BaseUnit": "mN\/m",
+		"Name": "Surface tension",
+		"Units": [{
+			"Factor": 1,
+			"Name": "dyne\/cm"
+		}, {
+			"Factor": 1,
+			"Name": "mN\/m"
+		}]
+	}, {
+		"BaseUnit": "Pa•s",
+		"Name": "Viscosity (dynamic)",
+		"Units": [{
+			"Factor": 6894.757,
+			"Name": "(lbf-s)\/in.²"
+		}, {
+			"Factor": 47.88026,
+			"Name": "(lbf-s)\/ft²"
+		}, {
+			"Factor": 9.80665,
+			"Name": "(kgf-s)\/m²"
+		}, {
+			"Factor": 1.488164,
+			"Name": "lbm\/(ft-s)"
+		}, {
+			"Factor": 0.1,
+			"Name": "(dyne-s)\/cm²"
+		}, {
+			"Factor": 0.001,
+			"Name": "cp"
+		}, {
+			"Factor": 0.0004133789,
+			"Name": "lbm\/(ft-hr)"
+		}, {
+			"Factor": 1,
+			"Name": "Pa•s"
+		}]
+	}, {
+		"BaseUnit": "mm²\/s",
+		"Name": "Viscosity (kinematic)",
+		"Units": [{
+			"Factor": 92903.04,
+			"Name": "ft²\/s"
+		}, {
+			"Factor": 645.16,
+			"Name": "in.²\/s"
+		}, {
+			"Factor": 277.7778,
+			"Name": "m²\/hr"
+		}, {
+			"Factor": 100,
+			"Name": "cm²\/s"
+		}, {
+			"Factor": 25.8064,
+			"Name": "ft²\/hr"
+		}, {
+			"Factor": 1,
+			"Name": "cSt"
+		}, {
+			"Factor": 1,
+			"Name": "mm²\/s"
+		}]
+	}, {
+		"BaseUnit": "μm²",
+		"Name": "Permeability",
+		"Units": [{
+			"Factor": 0.9869233,
+			"Name": "darcy"
+		}, {
+			"Factor": 0.0009869233,
+			"Name": "millidarcy"
+		}, {
+			"Factor": 1,
+			"Name": "μm²"
+		}]
+	}, {
+		"BaseUnit": "S",
+		"Name": "Admittance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "S"
+		}]
+	}, {
+		"BaseUnit": "μF",
+		"Name": "Capacitance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "μF"
+		}]
+	}, {
+		"BaseUnit": "kC",
+		"Name": "Capacity, storage battery",
+		"Units": [{
+			"Factor": 3.6,
+			"Name": "A•hr"
+		}, {
+			"Factor": 1,
+			"Name": "kC"
+		}]
+	}, {
+		"BaseUnit": "C\/mm³",
+		"Name": "Charge density",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C\/mm³"
+		}]
+	}, {
+		"BaseUnit": "S",
+		"Name": "Conductance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "S"
+		}, {
+			"Factor": 1,
+			"Name": "Ω(mho)"
+		}]
+	}, {
+		"BaseUnit": "A\/mm²",
+		"Name": "Current density",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A\/mm²"
+		}]
+	}, {
+		"BaseUnit": "C\/cm²",
+		"Name": "Displacement",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C\/cm²"
+		}]
+	}, {
+		"BaseUnit": "C",
+		"Name": "Electric charge",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C"
+		}]
+	}, {
+		"BaseUnit": "A",
+		"Name": "Electric current",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A"
+		}]
+	}, {
+		"BaseUnit": "C•m",
+		"Name": "Electric dipole moment",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C•m"
+		}]
+	}, {
+		"BaseUnit": "V\/m",
+		"Name": "Electric field strength",
+		"Units": [{
+			"Factor": 1,
+			"Name": "V\/m"
+		}]
+	}, {
+		"BaseUnit": "C",
+		"Name": "Electric flux",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C"
+		}]
+	}, {
+		"BaseUnit": "C\/m²",
+		"Name": "Electric polarization",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C\/m²"
+		}]
+	}, {
+		"BaseUnit": "V",
+		"Name": "Electric potential",
+		"Units": [{
+			"Factor": 1,
+			"Name": "V"
+		}]
+	}, {
+		"BaseUnit": "A•m²",
+		"Name": "Electromagnetic moment",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A•m²"
+		}]
+	}, {
+		"BaseUnit": "V",
+		"Name": "Electromotive force",
+		"Units": [{
+			"Factor": 1,
+			"Name": "V"
+		}]
+	}, {
+		"BaseUnit": "C",
+		"Name": "Flux of displacement",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C"
+		}]
+	}, {
+		"BaseUnit": "Hz",
+		"Name": "Frequency",
+		"Units": [{
+			"Factor": 1,
+			"Name": "cycles\/s"
+		}, {
+			"Factor": 1,
+			"Name": "Hz"
+		}]
+	}, {
+		"BaseUnit": "Ω",
+		"Name": "Impedance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "Ω"
+		}]
+	}, {
+		"BaseUnit": "μs\/m",
+		"Name": "Interval transit time",
+		"Units": [{
+			"Factor": 3.28084,
+			"Name": "μs\/ft"
+		}, {
+			"Factor": 1,
+			"Name": "μs\/m"
+		}]
+	}, {
+		"BaseUnit": "A\/mm",
+		"Name": "Linear current density",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A\/mm"
+		}]
+	}, {
+		"BaseUnit": "Wb•m",
+		"Name": "Magnetic dipole moment",
+		"Units": [{
+			"Factor": 1,
+			"Name": "Wb•m"
+		}]
+	}, {
+		"BaseUnit": "A\/m",
+		"Name": "Magnetic field strength",
+		"Units": [{
+			"Factor": 79.57747,
+			"Name": "oersted"
+		}, {
+			"Factor": 0.0007957747,
+			"Name": "gamma"
+		}, {
+			"Factor": 1,
+			"Name": "A\/m"
+		}]
+	}, {
+		"BaseUnit": "mWb",
+		"Name": "Magnetic flux",
+		"Units": [{
+			"Factor": 1,
+			"Name": "mWb"
+		}]
+	}, {
+		"BaseUnit": "T",
+		"Name": "Magnetic flux density",
+		"Units": [{
+			"Factor": 0.0001,
+			"Name": "gauss"
+		}, {
+			"Factor": 1,
+			"Name": "T"
+		}]
+	}, {
+		"BaseUnit": "mT",
+		"Name": "Magnetic induction",
+		"Units": [{
+			"Factor": 1,
+			"Name": "mT"
+		}]
+	}, {
+		"BaseUnit": "A•m²",
+		"Name": "Magnetic moment",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A•m²"
+		}]
+	}, {
+		"BaseUnit": "mT",
+		"Name": "Magnetic polarization",
+		"Units": [{
+			"Factor": 1,
+			"Name": "mT"
+		}]
+	}, {
+		"BaseUnit": "A",
+		"Name": "Magnetic potential difference",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A"
+		}]
+	}, {
+		"BaseUnit": "Wb\/m",
+		"Name": "Magnetic vector potential",
+		"Units": [{
+			"Factor": 1,
+			"Name": "Wb\/m"
+		}]
+	}, {
+		"BaseUnit": "A\/mm",
+		"Name": "Magnetization",
+		"Units": [{
+			"Factor": 1,
+			"Name": "A\/mm"
+		}]
+	}, {
+		"BaseUnit": "S",
+		"Name": "Modulus of admittance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "S"
+		}]
+	}, {
+		"BaseUnit": "Ω",
+		"Name": "Modulus of impedance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "Ω"
+		}]
+	}, {
+		"BaseUnit": "H",
+		"Name": "Mutual inductance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "H"
+		}]
+	}, {
+		"BaseUnit": "µH\/m",
+		"Name": "Permeability",
+		"Units": [{
+			"Factor": 1,
+			"Name": "µH\/m"
+		}]
+	}, {
+		"BaseUnit": "H",
+		"Name": "Permeance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "H"
+		}]
+	}, {
+		"BaseUnit": "µF\/m",
+		"Name": "Permittivity",
+		"Units": [{
+			"Factor": 1,
+			"Name": "µF\/m"
+		}]
+	}, {
+		"BaseUnit": "V",
+		"Name": "Potential difference",
+		"Units": [{
+			"Factor": 1,
+			"Name": "V"
+		}]
+	}, {
+		"BaseUnit": "C",
+		"Name": "Quantity of electricity",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C"
+		}]
+	}, {
+		"BaseUnit": "Ω",
+		"Name": "Reactance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "Ω"
+		}]
+	}, {
+		"BaseUnit": "H–1",
+		"Name": "Reluctance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "H–1"
+		}]
+	}, {
+		"BaseUnit": "Ω",
+		"Name": "Resistance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "Ω"
+		}]
+	}, {
+		"BaseUnit": "Ω•m",
+		"Name": "Resistivity",
+		"Units": [{
+			"Equation": "1 ",
+			"Name": "Ω•m"
+		}]
+	}, {
+		"BaseUnit": "mH",
+		"Name": "Self inductance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "mH"
+		}]
+	}, {
+		"BaseUnit": "mC\/m²",
+		"Name": "Surface density of charge",
+		"Units": [{
+			"Factor": 1,
+			"Name": "mC\/m²"
+		}]
+	}, {
+		"BaseUnit": "S",
+		"Name": "Susceptance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "S"
+		}]
+	}, {
+		"BaseUnit": "C\/mm³",
+		"Name": "Volume density of charge",
+		"Units": [{
+			"Factor": 1,
+			"Name": "C\/mm³"
+		}]
+	}, {
+		"BaseUnit": "Gy",
+		"Name": "Absorbed dose",
+		"Units": [{
+			"Factor": 0.01,
+			"Name": "rad"
+		}, {
+			"Factor": 1,
+			"Name": "Gy"
+		}]
+	}, {
+		"BaseUnit": "J",
+		"Name": "Acoustical energy",
+		"Units": [{
+			"Factor": 1,
+			"Name": "J"
+		}]
+	}, {
+		"BaseUnit": "W\/m²",
+		"Name": "Acoustical intensity",
+		"Units": [{
+			"Factor": 10000,
+			"Name": "W\/cm²"
+		}, {
+			"Factor": 1,
+			"Name": "W\/m²"
+		}]
+	}, {
+		"BaseUnit": "W",
+		"Name": "Acoustical power",
+		"Units": [{
+			"Factor": 1,
+			"Name": "W"
+		}]
+	}, {
+		"BaseUnit": "N\/m²",
+		"Name": "Sound pressure",
+		"Units": [{
+			"Factor": 1,
+			"Name": "N\/m²"
+		}]
+	}, {
+		"BaseUnit": "lx",
+		"Name": "Illuminance",
+		"Units": [{
+			"Factor": 10.76391,
+			"Name": "footcandle"
+		}, {
+			"Factor": 1,
+			"Name": "lx"
+		}]
+	}, {
+		"BaseUnit": "lx",
+		"Name": "Illumination",
+		"Units": [{
+			"Factor": 10.76391,
+			"Name": "footcandle"
+		}, {
+			"Factor": 1,
+			"Name": "lx"
+		}]
+	}, {
+		"BaseUnit": "W\/m²",
+		"Name": "Irradiance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "W\/m²"
+		}]
+	}, {
+		"BaseUnit": "lx•s",
+		"Name": "Light exposure",
+		"Units": [{
+			"Factor": 10.76391,
+			"Name": "footcandle•s"
+		}, {
+			"Factor": 1,
+			"Name": "lx•s"
+		}]
+	}, {
+		"BaseUnit": "cd\/m²",
+		"Name": "Luminance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "cd\/m²"
+		}]
+	}, {
+		"BaseUnit": "lm\/W",
+		"Name": "Luminous efficacy",
+		"Units": [{
+			"Factor": 1,
+			"Name": "lm\/W"
+		}]
+	}, {
+		"BaseUnit": "lm\/m²",
+		"Name": "Luminous exitance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "lm\/m²"
+		}]
+	}, {
+		"BaseUnit": "lm",
+		"Name": "Luminous flux",
+		"Units": [{
+			"Factor": 1,
+			"Name": "lm"
+		}]
+	}, {
+		"BaseUnit": "cd",
+		"Name": "Luminous intensity",
+		"Units": [{
+			"Factor": 1,
+			"Name": "cd"
+		}]
+	}, {
+		"BaseUnit": "ℓm•s",
+		"Name": "Quantity of light",
+		"Units": [{
+			"Factor": 1,
+			"Name": "talbot"
+		}, {
+			"Factor": 1,
+			"Name": "ℓm•s"
+		}]
+	}, {
+		"BaseUnit": "W\/(m²•sr)",
+		"Name": "Radiance",
+		"Units": [{
+			"Factor": 1,
+			"Name": "W\/(m²•sr)"
+		}]
+	}, {
+		"BaseUnit": "J",
+		"Name": "Radiant energy",
+		"Units": [{
+			"Factor": 1,
+			"Name": "J"
+		}]
+	}, {
+		"BaseUnit": "W",
+		"Name": "Radiant flux",
+		"Units": [{
+			"Factor": 1,
+			"Name": "W"
+		}]
+	}, {
+		"BaseUnit": "W\/sr",
+		"Name": "Radiant intensity",
+		"Units": [{
+			"Factor": 1,
+			"Name": "W\/sr"
+		}]
+	}, {
+		"BaseUnit": "W",
+		"Name": "Radiant power",
+		"Units": [{
+			"Factor": 1,
+			"Name": "W"
+		}]
+	}, {
+		"BaseUnit": "nm",
+		"Name": "Wavelength",
+		"Units": [{
+			"Factor": 0.1,
+			"Name": "Å"
+		}, {
+			"Factor": 1,
+			"Name": "nm"
+		}]
+	}, {
+		"BaseUnit": "m-1",
+		"Name": "Capture unit",
+		"Units": [{
+			"Factor": 10,
+			"Name": "10-3cm-1"
+		}, {
+			"Factor": 1,
+			"Name": "m-1"
+		}]
+	}, {
+		"BaseUnit": "Bq",
+		"Name": "Radioactivity",
+		"Units": [{
+			"Factor": 37000000000,
+			"Name": "curie"
+		}, {
+			"Factor": 1,
+			"Name": "Bq"
+		}]
+	}, {
+		"BaseUnit": "m (fluid)",
+		"Name": "Capillary",
+		"Units": [{
+			"Factor": 0.3048,
+			"Name": "ft (fluid)"
+		}, {
+			"Factor": 1,
+			"Name": "m (fluid)"
+		}]
+	}, {
+		"BaseUnit": "Pa-1",
+		"Name": "Compressibility of",
+		"Units": [{
+			"Factor": 0.0001450377,
+			"Name": "psi-1"
+		}, {
+			"Factor": 1,
+			"Name": "Pa-1"
+		}]
+	}, {
+		"BaseUnit": "mm",
+		"Name": "Corrosion allowance",
+		"Units": [{
+			"Factor": 25.4,
+			"Name": "in."
+		}, {
+			"Factor": 1,
+			"Name": "mm"
+		}]
+	}, {
+		"BaseUnit": "mm\/a",
+		"Name": "Corrosion rate",
+		"Units": [{
+			"Factor": 0.0254,
+			"Name": "mil\/yr"
+		}, {
+			"Factor": 1,
+			"Name": "mm\/a"
+		}]
+	}, {
+		"BaseUnit": "kPa",
+		"Name": "Differential orifice",
+		"Units": [{
+			"Factor": 0.24884,
+			"Name": "in. H2O"
+		}, {
+			"Factor": 1,
+			"Name": "kPa"
+		}]
+	}, {
+		"BaseUnit": "\"standard\"",
+		"Name": "Gas-oil ratio",
+		"Units": [{
+			"Factor": 0.1801175,
+			"Name": "scf\/bbl"
+		}, {
+			"Factor": 1,
+			"Name": "\"standard\""
+		}]
+	}, {
+		"BaseUnit": "\"standard\"",
+		"Name": "Gas rate",
+		"Units": [{
+			"Factor": 0.0286364,
+			"Name": "scf\/D"
+		}, {
+			"Factor": 1,
+			"Name": "\"standard\""
+		}]
+	}, {
+		"BaseUnit": "m",
+		"Name": "Heat (fluid mechanics)",
+		"Units": [{
+			"Factor": 0.3048,
+			"Name": "ft"
+		}, {
+			"Factor": 1,
+			"Name": "m"
+		}]
+	}, {
+		"BaseUnit": "kW",
+		"Name": "Heat exchange rate",
+		"Units": [{
+			"Factor": 0.0002930711,
+			"Name": "Btu\/hr"
+		}, {
+			"Factor": 1,
+			"Name": "kW"
+		}]
+	}, {
+		"BaseUnit": "µm²\/mPa•s",
+		"Name": "Mobility",
+		"Units": [{
+			"Factor": 0.9869233,
+			"Name": "d\/cp"
+		}, {
+			"Factor": 1,
+			"Name": "µm²\/mPa•s"
+		}]
+	}, {
+		"BaseUnit": "m",
+		"Name": "Net pay thickness",
+		"Units": [{
+			"Factor": 0.3048,
+			"Name": "ft"
+		}, {
+			"Factor": 1,
+			"Name": "m"
+		}]
+	}, {
+		"BaseUnit": "µm",
+		"Name": "Particle size",
+		"Units": [{
+			"Equation": "1.0*",
+			"Name": "micron"
+		}, {
+			"Factor": 1,
+			"Name": "µm"
+		}]
+	}, {
+		"BaseUnit": "md•m",
+		"Name": "Permeability-thickness",
+		"Units": [{
+			"Factor": 0.0003008142,
+			"Name": "md-ft"
+		}, {
+			"Factor": 1,
+			"Name": "md•m"
+		}]
+	}, {
+		"BaseUnit": "cm",
+		"Name": "Pipe diameter (actual)",
+		"Units": [{
+			"Factor": 2.54,
+			"Name": "in."
+		}, {
+			"Factor": 1,
+			"Name": "cm"
+		}]
+	}, {
+		"BaseUnit": "kPa",
+		"Name": "Pressure buildup",
+		"Units": [{
+			"Factor": 6.894757,
+			"Name": "psi"
+		}, {
+			"Factor": 1,
+			"Name": "kPa"
+		}]
+	}, {
+		"BaseUnit": "m³(kPa•d)",
+		"Name": "Productivity index",
+		"Units": [{
+			"Factor": 0.02305916,
+			"Name": "bbl\/(psi-D)"
+		}, {
+			"Factor": 1,
+			"Name": "m³(kPa•d)"
+		}]
+	}, {
+		"BaseUnit": "m³\/h",
+		"Name": "Pumping rate",
+		"Units": [{
+			"Factor": 0.2271247,
+			"Name": "U.S. gal\/min"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/h"
+		}]
+	}, {
+		"BaseUnit": "rad\/s",
+		"Name": "Revolutions per minute",
+		"Units": [{
+			"Factor": 0.1047198,
+			"Name": "rpm"
+		}, {
+			"Factor": 1,
+			"Name": "rad\/s"
+		}]
+	}, {
+		"BaseUnit": "m³\/m³",
+		"Name": "Recovery\/unit volume",
+		"Units": [{
+			"Factor": 0.0001288931,
+			"Name": "bbl\/(acre-ft)"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/m³"
+		}]
+	}, {
+		"BaseUnit": "km²",
+		"Name": "Reservoir area",
+		"Units": [{
+			"Factor": 2.589988,
+			"Name": "sq mile"
+		}, {
+			"Factor": 1,
+			"Name": "km²"
+		}]
+	}, {
+		"BaseUnit": "m³",
+		"Name": "Reservoir volume",
+		"Units": [{
+			"Factor": 1233.482,
+			"Name": "acre-ft"
+		}, {
+			"Factor": 1,
+			"Name": "m³"
+		}]
+	}, {
+		"BaseUnit": "m³\/(kPa•d•s)",
+		"Name": "Specific productivity",
+		"Units": [{
+			"Factor": 0.07565341,
+			"Name": "bbl\/(D-psi-ft)"
+		}, {
+			"Factor": 1,
+			"Name": "m³\/(kPa•d•s)"
+		}]
+	}, {
+		"BaseUnit": "mN\/m",
+		"Name": "Surface or interfacial tension in reservoir capillaries",
+		"Units": [{
+			"Factor": 1,
+			"Name": "dyne\/cm"
+		}, {
+			"Factor": 1,
+			"Name": "mN\/m"
+		}]
+	}, {
+		"BaseUnit": "N•m",
+		"Name": "Torque",
+		"Units": [{
+			"Factor": 1.355818,
+			"Name": "lbf-ft"
+		}, {
+			"Factor": 1,
+			"Name": "N•m"
+		}]
+	}, {
+		"BaseUnit": "m\/s",
+		"Name": "Velocity (fluid flow)",
+		"Units": [{
+			"Factor": 0.3048,
+			"Name": "ft\/s"
+		}, {
+			"Factor": 1,
+			"Name": "m\/s"
+		}]
+	}]
+}
