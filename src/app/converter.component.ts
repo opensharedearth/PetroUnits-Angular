@@ -112,23 +112,6 @@ export class ConverterComponent implements OnInit {
     this.router.navigate(['convert'], navExtras);
   }
 
-  updateQueryParams(key, unit) {
-    // all q-params apply to conversion calc
-    //  therefore, any change should clear previous calc
-    //  in case new calc is not possible bc of incomplete input
-    this.calcResult = null;
-    // update local copy of q-params
-    this.queryParams[key] = unit;
-    let navExtras: NavigationExtras = {
-      queryParams: this.queryParams
-    };
-    // apply updated q-params to router
-    this.router.navigate(['convert'], navExtras);
-
-    if (key === 'outputUnitSelect' || key === 'inputUnitSelect') {
-      this.updateUnits(key);
-    }
-  }
   updateUnits(key: string) {
     let q = this.queryParams;
     if (key === 'inputUnitSelect') {
