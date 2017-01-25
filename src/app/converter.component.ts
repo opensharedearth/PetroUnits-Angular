@@ -82,16 +82,6 @@ export class ConverterComponent implements OnInit {
       this.calcResult = this.conversionService.calculateExpression(exp);
     });
   }
- 
-
-  checkIfValid(expression) {
-    //TODO alert user to invalid input
-    if ( /[\/\\|<>!@#$%^&*();~`+_\-]/.test(expression) ) {
-      console.log('Invalid filter');
-      return false;
-    }
-    return true;
-  }
 
   parseExpression(expression) {
     let cExp: ConversionExpression;
