@@ -94,59 +94,14 @@ export class ConverterComponent implements OnInit {
   }
 
   parseExpression(expression) {
+    let cExp: ConversionExpression;
     // if no change to text field value then return
     //   fixed issue 1
     if (this.exp === expression) {
       return;
     }
-    let cTest = this.parseService.evaluateExpression(expression);
-    console.log(cTest);
-    this.updateQParamsFromExpression(cTest);
-
-  //   // Check for invalid input
-  //   if ( ! this.checkIfValid(expression) ) {
-  //     return;
-  //   }
-
-  //   let matches: any[];
-
-    
-
-  //   this.exp = expression;
-
-  //   if ( /=/.test(expression) ) {
-  //     [ this.exp1, this.exp2 ] = expression.split('=');
-  //     this.updateQueryParams('outputUnit', this.exp2.trim() );
-  //     // clear active selection in def list
-  //     //   when input is updated
-  //     this.clearParam('outputUnitSelect');
-  //   } else {
-  //     this.exp1 = expression;
-  //     this.exp2 = null;
-  //     this.num1 = null;
-  //     this.unit1 = null;
-  //   }
-
-  //   matches = evaluateExpression(this.exp1);
-    
-  //   if (matches && matches.length > 1) {
-  //     this.num1 = matches[1];
-  //     this.updateQueryParams('inputValue', this.num1);
-  //   }
-  //   if (matches && matches.length > 2) {
-  //     this.unit1 = matches[2].trim();
-  //     this.updateQueryParams('inputUnit', this.unit1);
-
-  //     // clear active selection in def list
-  //     //   when input is updated
-  //     this.clearParam('inputUnitSelect');
-  //   } 
-    
-  //   // TODO if not matches, give tips to user
-    
-  //   function evaluateExpression(exp) {
-  //     return /(^[0-9]+)([A-Za-z]+[0-9]?|\s[A-Za-z]+[0-9]?)/.exec(exp);
-  //   }
+    cExp = this.parseService.evaluateExpression(expression);
+    this.updateQParamsFromExpression(cExp);
   }
   updateQParamsFromExpression(exp: ConversionExpression):void {
     // all q-params apply to conversion calc
