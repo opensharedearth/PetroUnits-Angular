@@ -98,6 +98,13 @@ export class ConverterComponent implements OnInit {
       return;
     }
     cExp = this.parseService.evaluateExpression(expression);
+    // if error object, do not proceed to update q-params
+    //    store reference to cExp on component to display
+    //    the error object
+    if (cExp.error) {
+      this.expression = cExp;
+      return;
+    }
     this.updateQParamsFromExpression(cExp);
   }
   updateQParamsFromExpression(exp: ConversionExpression):void {

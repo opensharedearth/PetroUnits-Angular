@@ -12,7 +12,11 @@
     </span>
     {{ expression?.inputValue }} {{ expression?.selectedInput }}
   </div>
-  <div class="col-xs-2"> = </div>
+  <div class="col-xs-2"> 
+    <span *ngIf="expression?.inputUnit">
+      = 
+    </span>
+  </div>
   <div class="col-xs-5">
     <span *ngIf="calcResult?.isValid">
       {{ calcResult.value | number }} 
@@ -20,6 +24,18 @@
     {{ expression?.selectedOutput }}
   </div>
 </div>
+<!-- Display Errors from ParseService -->
+<div class="row" *ngIf="expression?.error">
+  <div class="col-xs-12 status">
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <div class="panel-title">{{ expression.error.name }}</div>
+      </div>
+      <div class="panel-body">{{ expression.error.message }}</div>
+    </div>
+  </div>
+</div>
+<!-- Display Errors from Calculation Result -->
 <div class="row" *ngIf="calcResult?.error">
   <div class="col-xs-12 status">
     <div class="panel panel-danger">
