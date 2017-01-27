@@ -43,8 +43,6 @@ import { ConversionService } from './conversion.service';
   `]
 })
 export class ConverterComponent implements OnInit { 
-
-
   expression: ConversionExpression;
   calcResult: CalculationResult;
 
@@ -97,6 +95,10 @@ export class ConverterComponent implements OnInit {
     if (this.expression.fullTextFromInput === expression) {
       return;
     }
+    // clear displayed definitions
+    this.clearDefinitions();
+
+    // evaluate the expression
     cExp = this.parseService.evaluateExpression(expression);
     // if error object, do not proceed to update q-params
     //    store reference to cExp on component to display
@@ -143,6 +145,11 @@ export class ConverterComponent implements OnInit {
     this.router.navigate(['convert'], navExtras);
   }
   
+  clearDefinitions() {
+    this.filteredInputDefinitions = null;
+    this.filteredOutputDefinitions = null;
+  }
+
   // Bound to class for list-group-items in definitions
   isUnitSelected(unit: string, type: string) {
     // sets active first match from input expression,
