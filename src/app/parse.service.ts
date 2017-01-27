@@ -7,7 +7,7 @@ import {
 @Injectable()
 export class ParseService {
   checkIfValidExpression(expression): boolean {
-    if ( /[\/\\|<>!@#$%^&*();~`+_\-]/.test(expression) ) {
+    if ( /[\\|<>!@#$%^&*();~`+_\-]/.test(expression) ) {
       return false;
     }
     return true;
@@ -38,6 +38,7 @@ export class ParseService {
     }
 
     lhsMatches = this.matchExpression(lhs);
+    console.log(lhsMatches);
     if (lhsMatches && lhsMatches.length > 2) {
       cExp.inputUnit = lhsMatches[2].trim();
     }
@@ -47,6 +48,6 @@ export class ParseService {
     return cExp;
   }
   matchExpression(expression: string) {
-    return /(^[0-9]+)([A-Za-z]+[0-9]?|\s[A-Za-z]+[0-9]?)/.exec(expression);
+    return /(^[0-9]+)(\s*[A-Za-z]+[0-9]?\/?[A-Za-z]*[0-9]?)/.exec(expression);
   }
 }
