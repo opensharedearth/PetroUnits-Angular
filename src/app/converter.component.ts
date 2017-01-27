@@ -43,11 +43,7 @@ import { ConversionService } from './conversion.service';
   `]
 })
 export class ConverterComponent implements OnInit { 
-  exp: string;
-  exp1: string;
-  exp2: string;
-  num1: number;
-  unit1: string;
+
 
   expression: ConversionExpression;
   calcResult: CalculationResult;
@@ -87,7 +83,6 @@ export class ConverterComponent implements OnInit {
       // update stored expression on component
       //    view updates based on ConversionExpression instance.
       this.expression = exp;
-      console.log(this.expression);
 
       // if expression has all required props, calculate
       //   else CalculationResult.isValid = false
@@ -99,8 +94,7 @@ export class ConverterComponent implements OnInit {
   parseExpression(expression) {
     let cExp: ConversionExpression;
     // if no change to text field value then return
-    //   fixed issue 1
-    if (this.exp === expression) {
+    if (this.expression.fullTextFromInput === expression) {
       return;
     }
     cExp = this.parseService.evaluateExpression(expression);

@@ -34,7 +34,6 @@ export class ParseService {
       [ lhs, rhs ] = expression.split('=');
       cExp.outputUnit = rhs.trim();
     } else {
-      console.log(cExp);
       return cExp;
     }
 
@@ -45,7 +44,6 @@ export class ParseService {
     if (lhsMatches && lhsMatches.length > 1) {
       cExp.inputValue = parseFloat(lhsMatches[1]);
     }
-    console.log(cExp);
     return cExp;
   }
   matchExpression(expression: string) {
