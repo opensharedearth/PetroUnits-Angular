@@ -1,5 +1,5 @@
 export class ConversionExpression {
-  fullExpression?:string;
+  fullTextFromInput?:string;
   inputUnit?: string;
   inputUnitSelect?: string;
   inputValue?: number;
@@ -9,6 +9,7 @@ export class ConversionExpression {
   error?: Error;
   constructor(obj?){
     if (obj) {
+      this.fullTextFromInput = obj.fullTextFromInput;
       this.inputValue = obj.inputValue;
       this.inputUnit = obj.inputUnit;
       this.inputUnitSelect = obj.inputUnitSelect;

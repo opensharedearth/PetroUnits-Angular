@@ -64,11 +64,16 @@ export class ConverterComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    // Router QueryParams subscription
+    //   QParams changes drive updates to Results Display
+    //   and Displayed Definitions  
     this.route.queryParams.subscribe( (q: Params) => {
       // need a copy, not a reference - otherwise will receive errors
       //   when setting props
       let exp: ConversionExpression, copy = Object.assign({}, q);
+      // component stores copy of q-params
       this.queryParams = copy;
+      // instantiate ConversionExpression, 
       exp = new ConversionExpression(copy);
       // filter definitions based on q-params grabbed from input field
       if (exp.inputUnit) {
@@ -79,9 +84,10 @@ export class ConverterComponent implements OnInit {
         this.filteredOutputDefinitions = 
           this.conversionService.filterOutputDefinitions(exp.outputUnit);
       }
-      
       // update stored expression on component
+      //    view updates based on ConversionExpression instance.
       this.expression = exp;
+      console.log(this.expression);
 
       // if expression has all required props, calculate
       //   else CalculationResult.isValid = false
@@ -89,6 +95,7 @@ export class ConverterComponent implements OnInit {
     });
   }
 
+  // Keyup Event Handler from input field
   parseExpression(expression) {
     let cExp: ConversionExpression;
     // if no change to text field value then return
@@ -111,14 +118,15 @@ export class ConverterComponent implements OnInit {
         inputUnit: exp.inputUnit,
         inputUnitSelect: exp.inputUnitSelect,
         outputUnit: exp.outputUnit,
-        outputUnitSelect: exp.outputUnitSelect
+        outputUnitSelect: exp.outputUnitSelect,
+        fullTextFromInput: exp.fullTextFromInput
       }
     };
     // apply updated q-params to router
     this.router.navigate(['convert'], navExtras);
   }
   
-  // Click handler for Definition lists in view
+  // Click Event Handler for Definition lists in view
   updateQParam(p_name, new_value) {
     console.log('Clicked another unit');
     // all q-params apply to conversion calc
@@ -133,21 +141,8 @@ export class ConverterComponent implements OnInit {
     // apply updated q-params to router
     this.router.navigate(['convert'], navExtras);
   }
-  updateUnits(key: string) {
-    let q = this.queryParams;
-    if (key === 'inputUnitSelect') {
-      this.unit1 = q[key];
-      return;
-    }
-    this.exp2 = q[key];
-  }
-  clearParam(key) {
-    let q = this.queryParams;
-    if (q[key]) {
-      q[key] = null;
-    }
-  }
   
+  // Bound to class for list-group-items in definitions
   isUnitSelected(unit: string, type: string) {
     // sets active first match from input expression,
     // or else if list-group-item is clicked, overrides selection

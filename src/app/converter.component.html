@@ -7,8 +7,8 @@
 </div>
 <div class="row results">
   <div class="col-xs-5">
-    <span *ngIf="!num1 && !unit1">
-      {{ exp1 }}
+    <span *ngIf="!expression?.inputValue && !expression?.selectedInput">
+      {{ expression?.fullTextFromInput }}
     </span>
     {{ expression?.inputValue }} {{ expression?.selectedInput }}
   </div>

@@ -21,6 +21,7 @@ export class ParseService {
   evaluateExpression(expression: string): ConversionExpression {
     let cExp = new ConversionExpression();
     let lhs, rhs, lhsMatches;
+    cExp.fullTextFromInput = expression;
     if ( ! this.checkIfValidExpression(expression) ) {
       cExp.error = {
         name: 'Invalid characters in input field',
@@ -28,13 +29,15 @@ export class ParseService {
       }
       return cExp;
     }
+
     if ( /=/.test(expression) ) {
       [ lhs, rhs ] = expression.split('=');
       cExp.outputUnit = rhs.trim();
     } else {
-      cExp.fullExpression = expression;
+      console.log(cExp);
       return cExp;
     }
+
     lhsMatches = this.matchExpression(lhs);
     if (lhsMatches && lhsMatches.length > 2) {
       cExp.inputUnit = lhsMatches[2].trim();
@@ -42,6 +45,7 @@ export class ParseService {
     if (lhsMatches && lhsMatches.length > 1) {
       cExp.inputValue = parseFloat(lhsMatches[1]);
     }
+    console.log(cExp);
     return cExp;
   }
   matchExpression(expression: string) {
