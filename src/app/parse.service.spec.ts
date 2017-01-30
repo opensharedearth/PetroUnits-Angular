@@ -39,50 +39,50 @@ describe('ParseService', () => {
     });
   });
 
-  describe('matchExpression method', () => {
+  describe('matchLHS method', () => {
     
     it('returns an Array', () => {
-      let match = service.matchExpression;
+      let match = service.matchLHS;
       let matches = match('10cm');
       expect(Array.isArray(matches)).toBe(true);
     });
 
     it('matches numbers followed by letters', () => {
-      let match = service.matchExpression;
+      let match = service.matchLHS;
       let matches = match('32 miles');
       expect(matches.length > 0).toBe(true);
     });
 
     it('does not match an expression with only numbers', () => {
-      expect(service.matchExpression('30'))
+      expect(service.matchLHS('30'))
         .toBe(null);
     });
 
     it('does not match an expression with only letters', () => {
-      expect(service.matchExpression('cm'))
+      expect(service.matchLHS('cm'))
         .toBe(null);
     });
 
     it(`returns match array of length 6, 
         representing full match and 5 capture groups`, () => {
-        let matches = service.matchExpression('1ft');
+        let matches = service.matchLHS('1ft');
         expect(matches.length).toEqual(6);
     });
 
     it('matches an expression that has a decimal', () => {
-      let matches = service.matchExpression('32.312cm');
+      let matches = service.matchLHS('32.312cm');
       expect(matches.length > 0).toBe(true);
     });
 
     it('matches units followed by a number representing an exponent', () => {
-      let matches = service.matchExpression('34.3mm2');
+      let matches = service.matchLHS('34.3mm2');
       expect(matches.length > 0).toBe(true);
     });
 
     it('captures exponents in the fourth index', () => {
-      let matches = service.matchExpression('2m3');
-      let matches2 = service.matchExpression('24.2cm2');
-      let matches3 = service.matchExpression('20m2/s');
+      let matches = service.matchLHS('2m3');
+      let matches2 = service.matchLHS('24.2cm2');
+      let matches3 = service.matchLHS('20m2/s');
       expect(matches[3]).toBe('3');
       expect(matches2[3]).toBe('2');
       expect(matches3[3]).toBe('2');
@@ -90,10 +90,24 @@ describe('ParseService', () => {
     });
 
     it('matches compound units of measure e.g. m/s', () => {
-      let matches = service.matchExpression('30m/s2');
+      let matches = service.matchLHS('30m/s2');
       expect(matches.length > 0).toBe(true);
     });
 
   });
 
+  describe('matchRHS method', () => {
+    // it(`returns match array of length 6, 
+    //   representing full match and 5 capture groups`, () => {
+    //   let matches = service.matchLHS('ft');
+    //   expect(matches.length).toEqual(6);
+    // });
+    
+    it('matches an expression with only letters', () => {
+      expect(service.matchRHS('cm'))
+        .not.toEqual(null);
+        console.log(service.matchRHS('cm'))
+    });
+
+  });
 });

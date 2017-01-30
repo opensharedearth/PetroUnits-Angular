@@ -20,7 +20,7 @@ export class ParseService {
   }
   evaluateExpression(expression: string): ConversionExpression {
     let cExp = new ConversionExpression();
-    let lhs, rhs, lhsMatches;
+    let lhs, rhs, lhsMatches, rhsMatches;
     cExp.fullTextFromInput = expression;
     if ( ! this.checkIfValidExpression(expression) ) {
       cExp.error = {
@@ -32,18 +32,31 @@ export class ParseService {
 
     if ( /=/.test(expression) ) {
       [ lhs, rhs ] = expression.split('=');
-      cExp.outputUnit = rhs.trim();
     } else {
       return cExp;
     }
 
-    lhsMatches = this.matchExpression(lhs);
-    console.log(lhsMatches);
+    lhsMatches = this.matchLHS(lhs);
+    rhsMatches = this.matchRHS(rhs);
     if (lhsMatches) {
       cExp.inputUnit = this.evaluateInputUnit(lhsMatches).trim();
-      
       cExp.inputValue = parseFloat(lhsMatches[1]);
     }
+    if (rhsMatches) {
+      console.log('Found RHS Matches');
+      console.log(rhsMatches);
+      if (rhsMatches[1]) {
+        cExp.error = {
+          name: 'RHS should only contain units',
+          message: 'Please only input the units you want in the right-hand side of the equation and not a value.'
+        };
+        console.log('Error found with RHS');
+        console.log(cExp);
+        return cExp;
+      }
+      cExp.outputUnit = this.evaluateInputUnit(rhsMatches).trim();
+    }
+   
     console.log(cExp);
     return cExp;
   }
@@ -71,7 +84,17 @@ export class ParseService {
     }
     return encodedExponent;
   }
-  matchExpression(expression: string) {
-    return /(^[0-9]+\.?[0-9]*)(\s*[A-Za-z]+)([0-9]?)\/?([A-Za-z]*)([0-9]?)/.exec(expression);
+  matchLHS(expression: string) {
+    return /(^[0-9]+\.?[0-9]*)(\s*[A-Za-z]+)([0-9]?)(\/?[A-Za-z]*)([0-9]?)/.exec(expression);
+  }
+  matchRHS(expression: string) {
+    // needs to have same capture groups as LHS 
+    //  difference is that first capture group must be optional
+    return /([0-9]*\.?[0-9]*)(\s*[A-Za-z]+)([0-9]?)(\/?[A-Za-z]*)([0-9]?)/.exec(expression);
+    // differences: 
+    // - no ^ infront of 1st [0-9] set
+    // - asterisk * instead of + after 1st [0-9] set
+    // can merge into one fn and handle error logic somewhere
+    // to verify that LHS starts with number and RHS does not.
   }
 }
