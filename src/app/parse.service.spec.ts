@@ -86,12 +86,13 @@ describe('ParseService', () => {
       expect(matches[3]).toBe('3');
       expect(matches2[3]).toBe('2');
       expect(matches3[3]).toBe('2');
+      console.log(matches3);
     });
 
     it('matches compound units of measure e.g. m/s', () => {
       let matches = service.matchExpression('30m/s2');
       expect(matches.length > 0).toBe(true);
-    })
+    });
 
   });
 
