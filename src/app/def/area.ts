@@ -15,7 +15,7 @@ export const AREA_UNITS = [
       baseValue: 1
     },
     {
-      name: 'sqft',
+      name: 'ft²',
       baseUnit: 'square meter',
       baseValue: 0.092903
     }

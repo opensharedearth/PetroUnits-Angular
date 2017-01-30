@@ -45,15 +45,12 @@ describe('ParseService', () => {
       let match = service.matchExpression;
       let matches = match('10cm');
       expect(Array.isArray(matches)).toBe(true);
-      console.log(matches);
-      console.log(match('10'));
     });
 
     it('matches numbers followed by letters', () => {
       let match = service.matchExpression;
       let matches = match('32 miles');
       expect(matches.length > 0).toBe(true);
-      console.log(matches);
     });
 
     it('does not match an expression with only numbers', () => {
@@ -74,8 +71,21 @@ describe('ParseService', () => {
     it('matches units followed by a number representing an exponent', () => {
       let matches = service.matchExpression('34.3mm2');
       expect(matches.length > 0).toBe(true);
-      console.log(matches);
     });
+
+    it('captures exponents in the fourth index', () => {
+      let matches = service.matchExpression('2m3');
+      let matches2 = service.matchExpression('24.2cm2');
+      let matches3 = service.matchExpression('20m2/s');
+      expect(matches[3]).toBe('3');
+      expect(matches2[3]).toBe('2');
+      expect(matches3[3]).toBe('2');
+    });
+
+    it('matches compound units of measure e.g. m/s', () => {
+      let matches = service.matchExpression('30m/s2');
+      expect(matches.length > 0).toBe(true);
+    })
 
   });
 

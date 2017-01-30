@@ -48,6 +48,6 @@ export class ParseService {
     return cExp;
   }
   matchExpression(expression: string) {
-    return /(^[0-9]+\.?[0-9]+)(\s*[A-Za-z]+[0-9]?\/?[A-Za-z]*[0-9]?)/.exec(expression);
+    return /(^[0-9]+\.?[0-9]*)(\s*[A-Za-z]+)([0-9]?)\/?([A-Za-z]*)([0-9]?)/.exec(expression);
   }
 }
