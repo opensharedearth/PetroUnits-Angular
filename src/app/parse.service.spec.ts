@@ -63,6 +63,12 @@ describe('ParseService', () => {
         .toBe(null);
     });
 
+    it(`returns match array of length 6, 
+        representing full match and 5 capture groups`, () => {
+        let matches = service.matchExpression('1ft');
+        expect(matches.length).toEqual(6);
+    });
+
     it('matches an expression that has a decimal', () => {
       let matches = service.matchExpression('32.312cm');
       expect(matches.length > 0).toBe(true);

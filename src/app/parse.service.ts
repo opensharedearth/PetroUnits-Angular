@@ -39,10 +39,8 @@ export class ParseService {
 
     lhsMatches = this.matchExpression(lhs);
     console.log(lhsMatches);
-    if (lhsMatches && lhsMatches.length > 2) {
+    if (lhsMatches) {
       cExp.inputUnit = lhsMatches[2].trim();
-    }
-    if (lhsMatches && lhsMatches.length > 1) {
       cExp.inputValue = parseFloat(lhsMatches[1]);
     }
     return cExp;
