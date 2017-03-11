@@ -1,4 +1,5 @@
 <div class="row">
+  <!-- Left-hand unit domain selection menu -->
   <div class="col-xs-3 category-select">
     <ul class="nav nav-pills nav-stacked">
       <li routerLinkActive="active"><a routerLink="/tables/length">Length</a></li>
@@ -6,6 +7,7 @@
       <li routerLinkActive="active"><a routerLink="/tables/mass">Mass</a></li>
     </ul>
   </div>
+  <!-- End left-hand unit domain selection menu -->
   <div class="col-xs-9">
     <div *ngIf="error">
       <b>{{ error.err }}</b> {{ error.msg }}

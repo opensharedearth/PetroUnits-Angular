@@ -8,12 +8,31 @@ import {
 
 import { ParseService } from './parse.service';
 import { UNIT_DEFINITIONS } from './def';
+
+/**
+ * @method findUnitDefinition
+ * @method filterDefinitions
+ * @method filterInputDefinitions
+ * @method filterOutputDefinitions
+ * @method isCompleteExpression
+ * @method calculateExpression
+ */
+
+
 @Injectable()
 export class ConversionService {
   definitions: UnitDefinition[] = UNIT_DEFINITIONS;
   filteredInputDefinitions: UnitDefinition[];
   filteredOutputDefinitions: UnitDefinition[];
   constructor(private parseService: ParseService) {}
+
+  /**
+   * getUnitDefinitions
+   */
+
+  /**
+   * getAvailableUnitDomains
+   */
 
   findUnitDefinition(unit_type: string, from_list: string): UnitDefinition {
     return;
