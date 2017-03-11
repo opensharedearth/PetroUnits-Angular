@@ -1,43 +1,3 @@
-<div class="panel panel-default results-panel">
-  <div class="panel-body">
-    <div class="row results-display">
-      <div class="col-xs-5">
-        <div class="blue">
-          <span *ngIf="inputValue">
-            {{ inputValue | number }} 
-          </span>
-          {{ selectedUnit?.name }}
-        </div>
-      </div>
-      <div class="col-xs-2">
-        =
-      </div>
-      <div class="col-xs-5">
-        <div class="red">
-          <span *ngIf="inputValue">
-            {{ (selectedUnit?.baseValue / outputVal?.baseValue * inputValue)
-            | number:'1.0-5' }}
-          </span> 
-          {{ outputVal?.name }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <div class="form-group">
-      <label for="inputVal">Input value</label>
-      <input type="number"
-            #myValue
-            (keyup)="setValue(myValue.value)"
-            id="inputVal"
-            class="form-control"
-            placeholder="Numerical value to convert">
-    </div>
-  </div>
-</div>
-<hr/>
 <div class="row">
   <div class="col-xs-3 category-select">
     <ul class="nav nav-pills nav-stacked">
@@ -53,9 +13,6 @@
     <table *ngIf="table" class="table table-hover">
       <thead>
         <tr>
-          <th><span class="tip"
-                    *ngIf="!outputVal" 
-                    data-tooltip="Click 'Set' in this column to select output unit"></span></th>
           <th>Name</th>
           <th *ngIf="!selectedUnit" data-tooltip="Click anywhere on a row to select the input unit">In {{ table[0].base }}s</th>
           <th *ngIf="selectedUnit">
@@ -68,11 +25,7 @@
       <tbody>
         <tr *ngFor="let a of table"
             (click)="onSelectRow(a.name)"
-            [class.selected]="isSelected(a.name)"
-            [class.output]="isOutput(a.name)">
-          <td>
-            <a (click)="setOutput( $event, a )">Set</a>
-          </td>
+            [class.selected]="isSelected(a.name)">
           <td> {{ a.name }} </td>
           <td *ngIf="!selectedUnit"> {{ a.baseValue }} </td>
           <td *ngIf="selectedUnit">

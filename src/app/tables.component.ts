@@ -62,17 +62,7 @@ export class TablesComponent implements OnInit {
     }
     return false;
   }
-  isOutput(name) {
-    if (this.outputVal) {
-      return name === this.outputVal.name;
-    }
-    return false;
-  }
   setValue(val) {
     this.inputValue = val;
-  }
-  setOutput( e, unit) {
-    e.stopPropagation();
-    this.outputVal = unit;
   }
 }
